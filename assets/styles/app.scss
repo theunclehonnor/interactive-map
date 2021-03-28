@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+@import "default";
+
+body {
+    background-color: lightgray;
+}
+.background_color {
+    background: #1C0F78;
+}
+.img_size {
+    min-height: 80%;
+}
+.text_size {
+    font-size: 20px;
+}
+.color_li {
+    border-radius: 5%;
+    box-shadow: inset 0 0 10px 5px rgba(255,255,255,1);
+    background-color: rgba(65,105,225, 0.2);
+}
+.map_size {
+    height: 750px;
+}
+
+.form_color {
+    background: #FFFFFF;
+    border: 4px solid #0094F8;
+    box-sizing: border-box;
+    border-radius: 28px;
+}
+.label_width_product {
+    width: 200px;
+}
+.input_width {
+    width: 350px;
+}
+
+.footer {
+    background: #0073B5;
+}

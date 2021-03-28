@@ -12,7 +12,7 @@ class Report
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
     private $id;
@@ -42,6 +42,11 @@ class Report
      * @ORM\JoinColumn(nullable=false)
      */
     private $source;
+
+    /**
+     * @ORM\Column(type="string", length=1000, nullable=true)
+     */
+    private $file;
 
     public function getId(): ?int
     {
@@ -104,6 +109,18 @@ class Report
     public function setSource(?Source $source): self
     {
         $this->source = $source;
+
+        return $this;
+    }
+
+    public function getFile(): ?string
+    {
+        return $this->file;
+    }
+
+    public function setFile(?string $file): self
+    {
+        $this->file = $file;
 
         return $this;
     }
